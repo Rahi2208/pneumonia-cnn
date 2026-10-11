@@ -1,6 +1,6 @@
-# Deteksi Pneumonia dari Rontgen (CNN)
+# Pneumonia Detection from Chest X-Rays (CNN)
 
-CNN sederhana dari nol (PyTorch) untuk mengklasifikasi foto rontgen dada menjadi `NORMAL` atau `PNEUMONIA`.
+A simple CNN built from scratch in PyTorch that classifies chest X-ray images as `NORMAL` or `PNEUMONIA`.
 
 ## Install
 
@@ -8,9 +8,9 @@ CNN sederhana dari nol (PyTorch) untuk mengklasifikasi foto rontgen dada menjadi
 pip install torch torchvision scikit-learn jupyter
 ```
 
-## Download dataset
+## Download the dataset
 
-Dataset: [Chest X-Ray Images (Pneumonia)](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia) dari Kaggle (~1,2 GB).
+Dataset: [Chest X-Ray Images (Pneumonia)](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia) on Kaggle (~1.2 GB).
 
 ```bash
 mkdir -p data
@@ -20,9 +20,9 @@ unzip chest-xray.zip
 cd ..
 ```
 
-Kalau `curl` gagal, download manual dari link Kaggle di atas, lalu ekstrak ke folder `data/`.
+If `curl` fails, download it manually from the Kaggle link above and extract it into the `data/` folder.
 
-Struktur akhirnya:
+Expected structure:
 
 ```
 data/
@@ -32,6 +32,6 @@ data/
     └── test/
 ```
 
-## Jalankan
+## Run
 
-Buka `pneumonia_cnn.ipynb`, lalu jalankan semua cell.
+Open `pneumonia_cnn.ipynb` and run all cells.
